@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-center text-5xl py-4;
+}
+
+section {
+  @apply mb-7;
+}

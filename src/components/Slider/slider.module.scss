@@ -1,0 +1,31 @@
+.sliderProvider {
+  @apply relative text-center text-3xl;
+}
+
+.slider {
+  @apply h-full;
+
+  & img {
+    @apply w-full;
+  }
+}
+
+.left {
+  @apply absolute -left-12 top-1/2 -translate-y-1/2;
+}
+
+.right {
+  @apply absolute -right-12 top-1/2 -translate-y-1/2;
+}
+
+.dots {
+  @apply flex gap-3 justify-center items-center mt-1;
+
+  & > button {
+    @apply w-5 h-5 border-2 border-gray-900 rounded-full;
+
+    &:disabled {
+      @apply bg-gray-900;
+    }
+  }
+}
